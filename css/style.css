@@ -33,3 +33,32 @@
 .footer-row2{
 	background-color: #ffc002;
 }
+
+.home-slide-button{
+	height: 38px;
+}
+
+.home-slide-button1:hover{
+	color: #ffc107; 
+	background-color: #343a40;
+}
+
+@media (max-width: 992px) {
+  .home-carousel-image {
+    height: 424px;
+  }
+}
+
+.home-carousel{
+	height: 560px;
+}
+
+@media only screen and (min-width: 992px) {
+  .home-carousel-image3{	
+    top: -120px;
+    position: absolute;
+	}
+}
+
+
+	
