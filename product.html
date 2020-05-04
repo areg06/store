@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container-lg">
+      <header>
+        <div class="row row1 navbar bg-secondary">
+          <div class="row col-md-6 d-none d-sm-none d-md-flex justify-content-around align-items-center">
+            <p class="my-3 text-warning">Tel: 37421212121</p>
+            <p class="my-3 text-warning">Wellcome To Our Shop</p>
+          </div>
+          <div class="row row2 col-12 col-md-6  mx-auto">
+            <div class="input-group col-6 col-md-4">
+              <select class="custom-select bg-transparent text-warning border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="inputGroupSelect01">
+                <option class="text-dark bg-warning" selected>AM</option>
+                <option class="text-dark bg-warning" value="1">RU</option>
+                <option class="text-dark bg-warning" value="2">EN</option>
+              </select>
+            </div>
+            <div class="input-group col-6 col-md-4">
+              <select class="custom-select bg-transparent text-warning border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="inputGroupSelect01">
+                <option class="text-dark bg-warning" selected>$</option>
+                <option class="text-dark bg-warning" value="1">&#8364</option>
+                <option class="text-dark bg-warning" value="2">&#8383</option>
+              </select>
+            </div>
+            <button type="button" class="btn btn-warning d-none d-md-block col-md-4">
+              Wishlist <span class="badge badge-dark bg-dark">3</span>
+            </button>
+          </div>
+        </div>
+        <div class="row row2 navbar bg-dark">
+          <div class="row row1 mr-auto">
+            <a class="navbar-brand ml-5">STORE</a>
+          </div>
+          <div class="row row2">
+            <form class="form-inline d-none d-md-block mr-auto justify-content-end">
+              <input class="form-control mr-sm-2 bg-transparent border-warning" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="dropdown col-12 col-md-3 d-flex justify-content-end">
+              <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" data-toggle="modal" data-target="#logInModal" href="#">Log in</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#RegModal" href="#">Register</a>
+                <a class="dropdown-item" href="#">My orders</a>
+                <a class="dropdown-item" href="#">Account settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row3 navbar navbar-expand-md bg-warning">
+          <button class="navbar-toggler navbar-brand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto col-12 d-flex justify-content-around">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory1
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory2</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory2
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory2</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory3
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory2</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory4
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory2</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory5
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory2</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cotegory6
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory1</a>
+                  <a class="dropdown-item" href="#">Subcategory3</a>
+                </div>
+              </li>
+            </ul>  
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="main-row1 alert alert-warning mt-3" id="alert" role="alert">
+          Մենք զբաղվում ենք նոր ապրանքների առկայություն ապահովել։ 
+          <button type="button" class="close my-auto" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="bg-transparent border border-warning p-2 my-3 rounded disabled">
+          <a href="#">Phones</a> /
+          <a href="#">Apple</a> /
+          <a href="#">Iphones</a> /
+          <a href="#" class="text-muted">Iphones</a>
+        </div>
+        <div class="row prod-cols p-2 border border-secondary rounded">
+          <div class="prod-filter d-none d-md-block col-md-4 p-2 border border-secondary rounded">
+            <ul class="list-unstyled ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Screan Size
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">5.9in</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">5.1in</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">2.8in</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Whats Iphone
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Iphone8</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Iphone7</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Iphone6s</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Price
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning"><$500</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning"><$400</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">500$><400$</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Date
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">2016</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">2008</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">2020</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Screan
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Full Screan</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">With Buttons</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">"Old" Screan</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Condition
+                </a>
+                <div class="dropdown-menu bg-transparent border-secondary" aria-labelledby="navbarDropdown">
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Ok</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">With abrasion</p>
+                  </div>
+                  <div class="input-group-text bg-transparent border-0">
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                    <p class="text-warning">Unuseable</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="prods d-block col-12 col-md-8 p-2 border border-secondary rounded">
+            <div class="row p-1 prod prod1 col-6 col-md-12">
+              <div class="col-12 col-md-4 col-lg-3">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="prod-text-header text-center">
+                  <a href="#"><h3>IPhone 6s</h3></a>
+                </div>
+                <ul>
+                  <li class="text-warning">Procesor - A12</li>
+                  <li class="text-warning">RAM - 4Gb</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 text-center">
+                  <h1>$400</h1>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="col-12 btn btn-warning">Buy Now</a>
+                  <a href="#" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
+                </div>
+              </div>
+            </div>
+            <hr class="bg-warning d-none d-md-block">
+            <div class="row p-1 prod prod1 col-6 col-md-12">
+              <div class="col-12 col-md-4 col-lg-3">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="prod-text-header text-center">
+                  <a href="#"><h3>IPhone 6s</h3></a>
+                </div>
+                <ul>
+                  <li class="text-warning">Procesor - A12</li>
+                  <li class="text-warning">RAM - 4Gb</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 text-center">
+                  <h1>$400</h1>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="col-12 btn btn-warning">Buy Now</a>
+                  <a href="#" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
+                </div>
+              </div>
+            </div>
+            <hr class="bg-warning">
+            <div class="row p-1 prod prod1 col-6 col-md-12">
+              <div class="col-12 col-md-4 col-lg-3">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="prod-text-header text-center">
+                  <a href="#"><h3>IPhone 6s</h3></a>
+                </div>
+                <ul>
+                  <li class="text-warning">Procesor - A12</li>
+                  <li class="text-warning">RAM - 4Gb</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 text-center">
+                  <h1>$400</h1>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="col-12 btn btn-warning">Buy Now</a>
+                  <a href="#" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
+                </div>
+              </div>
+            </div>
+            <hr class="bg-warning d-none d-block">
+            <div class="row p-1 prod prod1 col-6 col-md-12">
+              <div class="col-12 col-md-4 col-lg-3">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="prod-text-header text-center">
+                  <a href="#"><h3>IPhone 6s</h3></a>
+                </div>
+                <ul>
+                  <li class="text-warning">Procesor - A12</li>
+                  <li class="text-warning">RAM - 4Gb</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 text-center">
+                  <h1>$400</h1>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="col-12 btn btn-warning">Buy Now</a>
+                  <a href="#" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
+                </div>
+              </div>
+            </div>
+            <hr class="bg-warning">
+            <div class="row p-1 prod prod1 col-6 col-md-12">
+              <div class="col-12 col-md-4 col-lg-3">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-4 col-lg-6">
+                <div class="prod-text-header text-center">
+                  <a href="#"><h3>IPhone 6s</h3></a>
+                </div>
+                <ul>
+                  <li class="text-warning">Procesor - A12</li>
+                  <li class="text-warning">RAM - 4Gb</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 text-center">
+                  <h1>$400</h1>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="col-12 btn btn-warning">Buy Now</a>
+                  <a href="#" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
+                </div>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </main>
+      <footer class="">
+        <div class="row row1 footer-row1">
+          <div class="ColComponation col-md-7 col-lg-8 d-block d-md-flex flex-column flex-md-row justify-content-md-start justify-content-cente text-center">
+            <div class="col1 col-12 col-md-4 d-flex flex-column">
+              <b><p class="text-secondary">GETTING STARTED</p></b>
+              <ul class="list-unstyled d-none d-md-inline">
+                <li><a href="#" class="text-decoration-none text-white"><p class="m-0">Start Your Campaign</p></a></li>
+                <li><a href="#" class="text-decoration-none text-white"><p>Campaign Guidelines</p></a></li>  
+              </ul>
+            </div>
+            <div class="col2 col-12 col-md-3 d-flex flex-column">
+              <b><p class="text-secondary">RESOURCES</p></b>
+              <ul class="list-unstyled d-none d-md-inline">
+                <li><a href="#" class="text-decoration-none text-white"><p class="m-0">Support Center</b></a></li>
+                <li><a href="#" class="text-decoration-none text-white"><p>FAQ</p></a></li>  
+              </ul>
+            </div>
+            <div class="col3 col-12 col-md-2 d-flex flex-column">
+              <b><p class="text-secondary">ABOUT</p></b>
+              <ul class="list-unstyled d-none d-md-inline">
+                <li><a href="#" class="text-decoration-none text-white"><p class="m-0">Our Ethos</p></a></li>
+                <li><a href="#" class="text-decoration-none text-white"><p>Pricing</p></a></li>  
+              </ul>
+            </div>
+            <div class="col4 col-12 col-md-3 d-flex flex-column">
+              <b><p class="text-secondary">CONNECT</p></b>
+              <ul class="list-unstyled d-none d-md-inline">
+                <li><a href="#" class="text-decoration-none text-white"><p class="m-0">Contact Us</p></a></li>
+                <li><a href="#" class="text-decoration-none text-white"><p>Pricing</p></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col5 col-md-5 col-lg-4 d-none d-md-flex align-items-center">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 bg-transparent" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-p rounded-0 shadow-lg" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="row row2 footer-row2">
+          <div class="col1 col-12 col-md-6 d-md-flex h-100 text-center justify-content-center justify-content-md-start align-items-center">
+            <h4 class="text-dark d-none d-md-flex"> We'r Here Too :</h4>
+            <a href=""><i class="fa fa-facebook text-dark mx-4"></i></a>
+            <a href=""><i class="fa fa-twitter text-dark mr-4"></i></a>
+            <a href=""><i class="fa fa-instagram text-dark mr-4"></i></a>
+            <a href=""><i class="fa fa-linkedin text-dark"></i></a>
+          </div>
+          <div class="col2 col-md-6 col-12 d-md-flex text-center justify-content-center justify-content-md-end align-items-center">
+            <span class="text-dark">&#xA9 1904260140</span>
+          </div>
+        </div>
+      </footer>
+    </div>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
