@@ -337,108 +337,166 @@
                 </button>
               </div>
               <div class="modal-body m-1">
-                <div class="row"> 
-                  <div class="p-1 prod prod1 col-6 col-md-12 border border-secondary rounded mt-1">
-                    <div class="row">
+                <div class="row d-none d-md-flex col-12">
+                  <div class="col1 col-5 p-0 mr-5"><p class="mb-0">Product</p></div>
+                  <div class="col2 col-1 p-0 mr-5"><p class="mb-0">Price</p></div>
+                  <div class="col3 col-1 p-0 mr-5"><p class="mb-0">Quantity</p></div>
+                  <div class="col4 col-1"><p class="mb-0">Total</p></div>
+                </div>
+                <hr class="mt-0 d-none d-md-flex">
+                <div class="row" id="WishlistItem">
+                  <div class="row col-12">
+                    <div class="row row1 col-12 p-0">
                       <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
                         <img src="image/6s.png" class="prod-img">
                       </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                      <div class="prod-text-header text-center">
-                        <a href="singl.html"><h3>IPhone 6s</h3></a>
+                      <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-warning bg-transparent wishlist-button-star">
+                          <i class="fa fa-star text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                        </button>
+                      </div>     
+                      <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                        <h5>IPhone 6s</h5>
                       </div>
-                      <ul>
-                        <li class="text-warning">Procesor - A12</li>
-                        <li class="text-warning">RAM - 4Gb</li>
-                      </ul>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Price:</p>$200.99</p>
+                      </div>
+                      <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                        <form action="/action_page.php">
+                          <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-dark">
+                        </form>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Total:</p>$200.99</p>
+                      </div> 
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                      <div class="col-12 text-center">
-                        <h1>$400</h1>
-                      </div>
-                      <div class="mt-2">
-                       <a href="#" class="col-12 btn btn-warning">Buy Now</a>
-                       <a href="singl.html" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
-                      </div>
-                    </div>
-                    </div>  
                   </div>
-                  <div class="p-1 prod prod1 col-6 col-md-12 border border-secondary rounded mt-1">
-                    <div class="row">
+                  <div class="row row2 col-12 mt-3">
+                    <div class="col1 col-12 col-md-4 mr-auto mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Contenou Shipping</button>
+                    </div>
+                    <div class="col2 col-12 col-md-3 pr-md-0 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Clear Cart</button>
+                    </div>
+                    <div class="col3 col-12 col-md-3 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Update Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row col-12">
+                    <div class="row row1 col-12 p-0">
                       <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
                         <img src="image/6s.png" class="prod-img">
                       </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                      <div class="prod-text-header text-center">
-                        <a href="singl.html"><h3>IPhone 6s</h3></a>
+                      <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-warning bg-transparent wishlist-button-star">
+                          <i class="fa fa-star text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                        </button>
+                      </div>     
+                      <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                        <h5>IPhone 6s</h5>
                       </div>
-                      <ul>
-                        <li class="text-warning">Procesor - A12</li>
-                        <li class="text-warning">RAM - 4Gb</li>
-                      </ul>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Price:</p>$200.99</p>
+                      </div>
+                      <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                        <form action="/action_page.php">
+                          <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-dark">
+                        </form>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Total:</p>$200.99</p>
+                      </div> 
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                      <div class="col-12 text-center">
-                        <h1>$400</h1>
-                      </div>
-                      <div class="mt-2">
-                       <a href="#" class="col-12 btn btn-warning">Buy Now</a>
-                       <a href="singl.html" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
-                      </div>
-                    </div>
-                    </div>  
                   </div>
-                  <div class="p-1 prod prod1 col-6 col-md-12 border border-secondary rounded mt-1">
-                    <div class="row">
+                  <div class="row row2 col-12 mt-3">
+                    <div class="col1 col-12 col-md-4 mr-auto mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Contenou Shipping</button>
+                    </div>
+                    <div class="col2 col-12 col-md-3 pr-md-0 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Clear Cart</button>
+                    </div>
+                    <div class="col3 col-12 col-md-3 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Update Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row col-12">
+                    <div class="row row1 col-12 p-0">
                       <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
                         <img src="image/6s.png" class="prod-img">
                       </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                      <div class="prod-text-header text-center">
-                        <a href="singl.html"><h3>IPhone 6s</h3></a>
+                      <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-warning bg-transparent wishlist-button-star">
+                          <i class="fa fa-star text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                        </button>
+                      </div>     
+                      <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                        <h5>IPhone 6s</h5>
                       </div>
-                      <ul>
-                        <li class="text-warning">Procesor - A12</li>
-                        <li class="text-warning">RAM - 4Gb</li>
-                      </ul>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Price:</p>$200.99</p>
+                      </div>
+                      <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                        <form action="/action_page.php">
+                          <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-dark">
+                        </form>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Total:</p>$200.99</p>
+                      </div> 
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                      <div class="col-12 text-center">
-                        <h1>$400</h1>
-                      </div>
-                      <div class="mt-2">
-                       <a href="#" class="col-12 btn btn-warning">Buy Now</a>
-                       <a href="singl.html" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
-                      </div>
-                    </div>
-                    </div>  
                   </div>
-                  <div class="p-1 prod prod1 col-6 col-md-12 border border-secondary rounded mt-1">
-                    <div class="row">
+                  <div class="row row2 col-12 mt-3">
+                    <div class="col1 col-12 col-md-4 mr-auto mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Contenou Shipping</button>
+                    </div>
+                    <div class="col2 col-12 col-md-3 pr-md-0 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Clear Cart</button>
+                    </div>
+                    <div class="col3 col-12 col-md-3 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Update Cart</button>
+                    </div>
+                  </div>
+                  <div class="row col-12">
+                    <div class="row row1 col-12 p-0">
                       <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
                         <img src="image/6s.png" class="prod-img">
                       </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                      <div class="prod-text-header text-center">
-                        <a href="singl.html"><h3>IPhone 6s</h3></a>
+                      <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-warning bg-transparent wishlist-button-star">
+                          <i class="fa fa-star text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                        </button>
+                      </div>     
+                      <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                        <h5>IPhone 6s</h5>
                       </div>
-                      <ul>
-                        <li class="text-warning">Procesor - A12</li>
-                        <li class="text-warning">RAM - 4Gb</li>
-                      </ul>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Price:</p>$200.99</p>
+                      </div>
+                      <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                        <form action="/action_page.php">
+                          <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-dark">
+                        </form>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                        <p class="mb-1"><p class="d-block d-md-none mb-1 mr-2">Total:</p>$200.99</p>
+                      </div> 
                     </div>
-                    <div class="col-12 col-md-4 col-lg-3">
-                      <div class="col-12 text-center">
-                        <h1>$400</h1>
-                      </div>
-                      <div class="mt-2">
-                       <a href="#" class="col-12 btn btn-warning">Buy Now</a>
-                       <a href="singl.html" class="col-12 btn btn-transperate mt-1 border border-warning text-warning">Check It</a>
-                      </div>
-                    </div>
-                    </div>  
                   </div>
-                </div>  
+                  <div class="row row2 col-12 mt-3">
+                    <div class="col1 col-12 col-md-4 mr-auto mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Contenou Shipping</button>
+                    </div>
+                    <div class="col2 col-12 col-md-3 pr-md-0 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Clear Cart</button>
+                    </div>
+                    <div class="col3 col-12 col-md-3 mb-2">
+                      <button type="button" class="btn btn-dark bg-transparent text-dark border-2 rounded-0 wishlist-button col-12 wishlist-button-row2">Update Cart</button>
+                    </div>
+                  </div>
+                </div>
+                </div>   
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

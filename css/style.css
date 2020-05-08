@@ -69,3 +69,19 @@
 	background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.wishlist-star:hover{
+	color: grey !important;
+	transition: 0.8s;
+}
+
+.wishlist-button-star:hover{
+	border-color: grey !important;
+	transition: 0.8s;
+}
+
+.wishlist-button-row2:hover{
+	background-color: #343a40 !important;
+	color: rgb(255, 255, 255) !important;
+	transition: 0.8s;
+}
