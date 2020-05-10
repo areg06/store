@@ -8,8 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/popup.css">
-    <link rel="stylesheet" type="text/css" href="css/zoom.css">
     <title>Hello, world!</title>
   </head>
   <body class="bg-dark">
@@ -115,190 +113,129 @@
           </div>
         </div>
       </header>
-      <main class="mb-5">
-      <div>
-            <!-- Modal -->
-            <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content bg-dark">
-                  <div class="modal-header">
-                    <h5 class="modal-text text-warning" id="exampleModalLabel">LOG IN</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-group">
-                        <input type="email" class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" placeholder="Email" id="LogInEmail" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                      </div>
-                      <div class="form-group">
-                        <input type="password" class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" placeholder="Password" id="LogInPassword">
-                      </div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="LogInSaveInfo">
-                        <label class="form-check-label text-warning" for="LogInSaveInfo">Remeber Me</label>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-transparent btn-outline-warning" data-dismiss="modal">Close</button>
-                    <a href="myAccount.html" type="button" class="btn btn-warning">LOG IN</a>
-                  </div>
-                </div>
+      <main>
+        <div class="row d-none d-md-flex col-12 mt-4">
+          <div class="col1 col-6 p-0"><p class="mb-0 text-warning">Product</p></div>
+          <div class="col2 col-2 p-0"><p class="mb-0 text-warning">Price</p></div>
+          <div class="col3 col-2 p-0"><p class="mb-0 text-warning">Quantity</p></div>
+          <div class="col4 col-2"><p class="mb-0 text-warning">Total</p></div>
+        </div>
+        <hr class="mt-0 d-none d-md-flex text-secondary">
+          <div class="row col-12" id="Prod1">
+            <div class="row row1 col-12 p-0">
+              <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                <img src="image/6s.png" class="prod-img">
               </div>
+              <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-warning bg-transparent wishlist-button-star" id="close1">
+                  <i class="fa fa-close text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                </button>
+              </div>     
+              <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                <h5>IPhone 6s</h5>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Price:</p>$200.99</p>
+              </div>
+              <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                <form action="/action_page.php">
+                  <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-warning text-warning bg-dark">
+                </form>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Total:</p>$200.99</p>
+              </div> 
             </div>
           </div>
-          <div>
-            <!-- Modal -->
-            <div class="modal fade" id="RegModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content bg-dark">
-                  <div class="modal-header">
-                    <h5 class="modal-text text-warning" id="exampleModalLabel">REGISTRATION</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="form-row">
-                        <div class="col-md-4 mb-3">
-                          <input type="text" class="form-control  border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="validationDefault01" placeholder="Name" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                          <input type="text"  class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" placeholder="Lastname" id="validationDefault02" required>
-                        </div>
-                        <div class="col-md-4 mb-3">
-                          <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text bg-transparent border-0" id="inputGroupPrepend2">@</span>
-                            </div>
-                            <input type="text" class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                          <input type="text" class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="validationDefault03" placeholder="City" required>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                          <select class="custom-select border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="validationDefault04" required>
-                            <option selected disabled value="">Your Country</option>
-                            <option>Aremnia</option>
-                            <option>Russia</option>
-                            <option>America</option>
-                            <option>Poland</option>
-                          </select>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                          <input type="text" placeholder="Zip" class="form-control border-warning border-right-0 border-top-0 border-left-0 bg-transparent rounded-0" id="validationDefault05" required>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                          <label class="form-check-label" for="invalidCheck2">
-                            Agree to terms and conditions
-                          </label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-transparent btn-outline-warning" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning">Register</button>
-                  </div>
-                </div>
+          <div class="row col-12" id="Prod2">
+            <div class="row row1 col-12 p-0">
+              <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                <img src="image/6s.png" class="prod-img">
               </div>
-            </div>
-        <div class="bg-transparent border border-warning p-2 my-3 rounded disabled">
-          <a href="#">Phones</a> /
-          <a href="#">Apple</a> /
-          <a href="product.html">Iphones</a> /
-          <a href="#" class="text-muted">IPhone 6</a>
-        </div>
-        <div class="row mb-5">
-          <h2 class="text-center col-12">IPhone 7</h2>
-        </div>
-        <div class="row">
-          <div class="col1 d-flex col-12 col-md-6">
-            <div class="col1 col-md-3">
-              <div class="sm-img">
-                <div class="popup d-flex flex-column">
-                  <img src="image/singl6s.png" class="border border-secondary rounded p-2 mb-2">
-                  <img src="image/singl6sbr.png" class="border border-secondary rounded p-2 mb-2">
-                  <img src="image/singl6sunder.png" class="border border-secondary rounded p-2 mb-2">
-                </div>
-                <div class="show">
-                  <div class="overlay"></div>
-                  <div class="img-show">
-                    <span>X</span>
-                    <img src="">
-                  </div>
-                </div>
+              <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-warning bg-transparent wishlist-button-star" id="close2">
+                  <i class="fa fa-close text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                </button>
+              </div>     
+              <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                <h5>IPhone 6s</h5>
               </div>
-            </div>
-            <div class="col2 col-md-9 d-flex align-items-center">
-              <div class="lg-img">
-                <a href="image.jpg" class="image-link">
-                  <img src="image/6s.png" class="col-12" />
-                </a>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Price:</p>$200.99</p>
               </div>
+              <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                <form action="/action_page.php">
+                  <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-warning text-warning bg-dark">
+                </form>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Total:</p>$200.99</p>
+              </div> 
             </div>
           </div>
-          <div class="col2 col-12 col-md-6 mt-5">
-            <div class="col1">
-              <div class="row flex-column">
-                <del class="text-danger col-12 text-center">$500</del>
-                <h3 class="text-success col-12 text-center">$450</h3>
+          <div class="row col-12" id="Prod3">
+            <div class="row row1 col-12 p-0">
+              <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                <img src="image/6s.png" class="prod-img">
               </div>
-              <div class="row flex-column ml-4 mt-3">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label text-success" for="customCheck1">With Case</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label text-success" for="customCheck2">Without Box</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck3">
-                  <label class="custom-control-label text-success" for="customCheck3">Only Screan</label>
-                </div>
+              <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-warning bg-transparent wishlist-button-star" id="close3">
+                  <i class="fa fa-close text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                </button>
+              </div>     
+              <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                <h5>IPhone 6s</h5>
               </div>
-              <div class="row ml-4 mt-3 flex-column ">
-                <input type="text" class="form-control col-12 col-md-5 bg-transparent border-left-0 border-top-0 border-right-0 rounded-0 border-warning" aria-label="Text input" placeholder="How many pices">
-                <small class="text-secondary">Avilable only 9</small>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Price:</p>$200.99</p>
               </div>
-              <div class="row ml-4 mt-3">
-                <a href="cart.html" class="btn btn-warning bg-transparent mr-2">Add To Card</a>
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>  
+              <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                <form action="/action_page.php">
+                  <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-warning text-warning bg-dark">
+                </form>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Total:</p>$200.99</p>
+              </div> 
             </div>
           </div>
-        </div>
-        <div class="row">
-          <ul class="nav nav-tabs col-12 justify-content-center" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active text-success bg-transparent" id="home-tab" data-toggle="tab" href="#Avilabelity" role="tab" aria-controls="Avilabelity" aria-selected="fales">Avilabelity</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-success bg-transparent" id="profile-tab" data-toggle="tab" href="#Quality" role="tab" aria-controls="Quality" aria-selected="false">Quality</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-success bg-transparent" id="contact-tab" data-toggle="tab" href="#Progress" role="tab" aria-controls="Progress" aria-selected="false">Progress</a>
-            </li>
-          </ul>
-          <div class="row col-12 tab-content" id="myTabContent">
-            <div class="tab-pane fade show active col-12 mt-2" id="Avilabelity" role="tabpanel" aria-labelledby="Avilabelity-tab">
-              <h6 class="col-12 text-success text-center">We have only 9 pices but from a mounth we'll get 200 else</h6>
+          <div class="row col-12" id="Prod4">
+            <div class="row row1 col-12 p-0">
+              <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center">
+                <img src="image/6s.png" class="prod-img">
+              </div>
+              <div class="col-12 col-md-1 d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-warning bg-transparent wishlist-button-star" id="close4">
+                  <i class="fa fa-close text-warning wishlist-star" aria-hidden="true" data-dismiss="#WishlistItem"></i>
+                </button>
+              </div>     
+              <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+                <h5>IPhone 6s</h5>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Price:</p>$200.99</p>
+              </div>
+              <div class="d-flex col-12 col-md-3 justify-content-center align-items-center">
+                <form action="/action_page.php">
+                  <input type="number" id="quantity" placeholder="Qty" name="quantity" min="1" max="56" class="p-3 border-warning text-warning bg-dark">
+                </form>
+              </div>
+              <div class="d-flex align-items-center justify-content-center col-12 col-md-1 my-3 my-md-0">
+                <p class="mb-1 text-warning"><p class="d-block d-md-none mb-1 mr-2 text-secondary">Total:</p>$200.99</p>
+              </div> 
             </div>
-            <div class="tab-pane fade" id="Quality" role="tabpanel" aria-labelledby="Quality-tab">...</div>
-            <div class="tab-pane fade" id="Progress" role="tabpanel" aria-labelledby="Progress-tab">...</div>
           </div>
-        </div>
+          <div class="row row2 col-12 mt-3">
+            <div class="col1 col-12 col-md-4 mr-auto mb-2">
+              <a href="adress.html"><button type="button" class="btn btn-warning bg-transparent text-warning rounded-0 wishlist-button col-12 wishlist-button-row2">Contenu Shopping</button></a>
+            </div>
+            <div class="col2 col-12 col-md-3 pr-md-0 mb-2">
+              <button type="button" class="btn btn-warning bg-transparent text-warning rounded-0 wishlist-button col-12 wishlist-button-row2">Clear Cart</button>
+            </div>
+            <div class="col3 col-12 col-md-3 mb-2">
+              <button type="button" class="btn btn-warning bg-transparent text-warning rounded-0 wishlist-button col-12 wishlist-button-row2">Update Cart</button>
+            </div>
+          </div>
       </main>
       <footer class="">
         <div class="row row1 footer-row1">
@@ -355,11 +292,24 @@
     </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      $(document).ready(function(){
+        $("#close1").click(function(){
+          $("#Prod1").hide();
+        });
+        $("#close2").click(function(){
+          $("#Prod2").hide();
+        });
+        $("#close3").click(function(){
+          $("#Prod3").hide();
+        });
+        $("#close4").click(function(){
+          $("#Prod4").hide();
+        });
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/popup.js"></script>
-    <script type="text/javascript" src="js/zoom.js"></script>
-    
   </body>
 </html>

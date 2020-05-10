@@ -81,7 +81,7 @@
 }
 
 .wishlist-button-row2:hover{
-	background-color: #343a40 !important;
-	color: rgb(255, 255, 255) !important;
+	background-color: #ffc107 !important;
+	color: rgb(0, 0, 0) !important;
 	transition: 0.8s;
 }
