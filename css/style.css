@@ -85,3 +85,17 @@
 	color: rgb(0, 0, 0) !important;
 	transition: 0.8s;
 }
+
+.cart-card-icon{
+	margin-left: 114px;
+}
+
+.addresscard:hover{
+	background-color: #ffc107 !important;
+	transition: 2s !important; 
+}
+
+.paycard:hover{
+	background-color: #ffc107;
+	transition: 2s;
+}
