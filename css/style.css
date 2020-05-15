@@ -49,13 +49,6 @@
 	height: 560px;
 }
 
-@media only screen and (min-width: 992px) {
-  .home-carousel-image3{	
-    top: -120px;
-    position: absolute;
-	}
-}
-
 .prod-img{
 	width: 166px;
 }
@@ -95,7 +88,19 @@
 	transition: 2s !important; 
 }
 
+.addresscard:active{
+	background-color: #ffc107 !important;
+}
+
 .paycard:hover{
 	background-color: #ffc107;
 	transition: 2s;
+}
+
+.text-decoration-none{
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none !important;
 }

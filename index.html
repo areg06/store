@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/recomend.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
   </head>
@@ -14,8 +17,8 @@
     <div class="container-lg">
       <header>
         <div class="row row3 navbar bg-dark">
-          <div class="row col1 col-1">
-            <a href="index.html" class="">STORE</a>
+          <div class="row col1 col-1 w-100 h-100">
+            <a href="index.html" class=""><img src="image/logo.png"></a>
           </div>
           <div class="row col2 col-11">
             <div class="row col-12">
@@ -51,62 +54,57 @@
             <ul class="navbar-nav mr-auto col-12 d-flex justify-content-around">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Phones
+                  For women
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">IPhone</a>
-                  <a class="dropdown-item" href="product.html">Samsung</a>
-                  <a class="dropdown-item" href="product.html">Lenovo</a>
+                  <a class="dropdown-item" href="product.html">Summer classic</a>
+                  <a class="dropdown-item" href="product.html">Summer sports</a>
+                  <a class="dropdown-item" href="product.html">Summer sandals</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Computers
+                  For men
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">Mac</a>
-                  <a class="dropdown-item" href="product.html">Acer</a>
-                  <a class="dropdown-item" href="product.html">Asus</a>
+                  <a class="dropdown-item" href="product.html">Summer classic</a>
+                  <a class="dropdown-item" href="product.html">Summer sports</a>
+                  <a class="dropdown-item" href="product.html">Classic booties</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  NoteBook
+                  Kids shoes
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">MacBook</a>
-                  <a class="dropdown-item" href="product.html">Asus</a>
-                  <a class="dropdown-item" href="product.html">Acer</a>
+                  <a class="dropdown-item" href="product.html">Kids</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Phone Accessory
+                  Bags
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">Case</a>
-                  <a class="dropdown-item" href="product.html">Support</a>
-                  <a class="dropdown-item" href="product.html">Sticker</a>
+                  <a class="dropdown-item" href="product.html">Bags for men</a>
+                  <a class="dropdown-item" href="product.html">Clutch bags for women</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  NoteBook Accessory
+                  Accessories
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">NoteBook Bag</a>
-                  <a class="dropdown-item" href="product.html">Support</a>
-                  <a class="dropdown-item" href="product.html">BIg Sticker</a>
+                  <a class="dropdown-item" href="product.html">Wallet</a>
+                  <a class="dropdown-item" href="product.html">Ladies gloves</a>
+                  <a class="dropdown-item" href="product.html">Mens gloves</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cotegory6
+                  Belts
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="product.html">Subcategory1</a>
-                  <a class="dropdown-item" href="product.html">Subcategory1</a>
-                  <a class="dropdown-item" href="product.html">Subcategory3</a>
+                  <a class="dropdown-item" href="product.html">Belts for men</a>
                 </div>
               </li>
             </ul>  
@@ -126,25 +124,25 @@
               <div class="row">
                 <div class="col-lg-6 d-lg-flex flex-column my-5 d-none">
                   <h1 class="text-right text-dark">Apple IPod</h1>
-                  <p class="text-right text-dark">Recovery Apple iPod Touch 5 MP3 <br> 4 Dual Core 4.0 Inch 1 GB RAM 16/32 GB <br> ROM 5MP Camera Lossless Sound Used Music Player</p>
+                  <p class="text-right text-dark">Nike's first lifestyle Air Max lets you greet the <br> streets with the soft, smooth and resilient ride <br> of the Nike Air Max 270. The design draws inspiration from the Air <br> Max pantheon, showcasing Nike's greatest innovation with <br> its large window and fresh array of colors.</p>
                   <div class="buttons col-12 d-block col-12 text-right p-0">
                     <a class="btn btn-transparent border-dark mr-2 home-slide-button home-slide-button1" href="#" role="button">Add On Wishlist</a>
                     <a class="btn btn-danger home-slide-button home-slide-button2" href="#" role="button">Check It</a>
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 home-carousel-image-div home-carousel-image-div1">
-                  <img src="image/ipod.png" class="my-5 d-block w-100 home-carousel-image home-carousel-image1">
+                  <img src="image/nike.png" class="my-5 d-block w-100 home-carousel-image home-carousel-image1">
                 </div>
               </div>
             </div>
             <div class="carousel-item home-carousel">
               <div class="row">
                 <div class="col-lg-8 col-12 d-lg-block d-flex align-items-center home-carousel-image-div home-carousel-image-div2">
-                  <img src="image/MacBook.png" class="mb-6 my-lg-3 d-block w-100 home-carousel-image home-carousel-image2">
+                  <img src="image/nike.png" class="mb-6 my-lg-3 d-block w-100 home-carousel-image home-carousel-image2">
                 </div>
                 <div class="col-lg-4 d-lg-flex flex-column my-5 d-none">
                   <h1 class="text-left text-warning">MacBook Air</h1>
-                  <p class="text-left text-warning">Recovery Apple iPod Touch 5 MP3 <br> 4 Dual Core 4.0 Inch 1 GB RAM 16/32 GB <br> ROM 5MP Camera Lossless Sound Used Music Player</p>
+                  <p class="text-left text-warning">Nike's first lifestyle Air Max lets you greet the <br> streets with the soft, smooth and resilient ride <br> of the Nike Air Max 270. The design draws inspiration from the Air <br> Max pantheon, showcasing Nike's greatest innovation with <br> its large window and fresh array of colors.</p>
                   <div class="buttons col-12 d-block col-12 text-left p-0">
                     <a class="btn btn-dark border-warning text-warning mr-2 home-slide-button home-slide-button1 " href="#" role="button">Add On Wishlist</a>
                     <a class="btn btn-danger home-slide-button home-slide-button2 " href="#" role="button">Check It</a>
@@ -155,11 +153,11 @@
             <div class="carousel-item bg-secondary home-carousel">
               <div class="row">
                 <div class="col-lg-8 col-12 d-lg-block d-flex align-items-center home-carousel-image-div home-carousel-image-div3">
-                  <img src="image/iphone11.png" class="mb-6 my-lg-3 d-block w-100 home-carousel-image home-carousel-image3">
+                  <img src="image/nike.png" class="mb-6 my-lg-3 d-block w-100 home-carousel-image home-carousel-image3">
                 </div>
                 <div class="col-lg-4 d-lg-flex flex-column my-5 d-none">
                   <h1 class="text-left text-warning">MacBook Air</h1>
-                  <p class="text-left text-warning">Recovery Apple iPod Touch 5 MP3 <br> 4 Dual Core 4.0 Inch 1 GB RAM 16/32 GB <br> ROM 5MP Camera Lossless Sound Used Music Player</p>
+                  <p class="text-left text-warning">Nike's first lifestyle Air Max lets you greet the <br> streets with the soft, smooth and resilient ride <br> of the Nike Air Max 270. The design draws inspiration from the Air <br> Max pantheon, showcasing Nike's greatest innovation with <br> its large window and fresh array of colors.</p>
                   <div class="buttons col-12 d-block col-12 text-left p-0">
                     <a class="btn btn-dark border-warning text-warning mr-2 home-slide-button home-slide-button1 " href="#" role="button">Add On Wishlist</a>
                     <a class="btn btn-danger home-slide-button home-slide-button2 " href="#" role="button">Check It</a>
@@ -182,313 +180,335 @@
             <h1 class="col-12 text-uppercase text-center">daily sales</h1>
           </div>
           <div class="row row2 bg-warning justify-content-center">
-            <div class="col1 mb-3 mr-2">
-              <div class="card daily-card bg-dark">
-                <img class="daily-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center text-warning">Apple Iphone 6s</h5>
-                  <h6 class="text-center text-danger daily-saled-text">$299.99</h6>
-                  <h4 class="text-center text-success">$259.99</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="cart.html">Add To Card</a>
+            <div class="container1 row justify-content-center w-100 p-2">
+              <div class="card1 card2 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike3.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
-            </div>
-            <div class="col2 mb-3 mr-2">
-              <div class="card daily-card bg-dark">
-                <img class="daily-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center text-warning">Apple Iphone 6s</h5>
-                  <h6 class="text-center text-danger daily-saled-text">$299.99</h6>
-                  <h4 class="text-center text-success">$259.99</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="cart.html">Add To Card</a>
+              <div class="card1 card2 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike3.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
-            </div>
-            <div class="col3 mb-3 mr-2">
-              <div class="card daily-card bg-dark">
-                <img class="daily-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center text-warning">Apple Iphone 6s</h5>
-                  <h6 class="text-center text-danger daily-saled-text">$299.99</h6>
-                  <h4 class="text-center text-success">$259.99</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="cart.html">Add To Card</a>
+              <div class="card1 card2 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike3.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
-            </div>
-            <div class="col4 mb-3 mr-2">
-              <div class="card daily-card bg-dark">
-                <img class="daily-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center text-warning">Apple Iphone 6s</h5>
-                  <h6 class="text-center text-danger daily-saled-text">$299.99</h6>
-                  <h4 class="text-center text-success">$259.99</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="cart.html">Add To Card</a>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
-            </div>
-            <div class="col5 mb-3 mr-2">
-              <div class="card daily-card bg-dark">
-                <img class="daily-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="text-center text-warning">Apple Iphone 6s</h5>
-                  <h6 class="text-center text-danger daily-saled-text">$299.99</h6>
-                  <h4 class="text-center text-success">$259.99</h4>
-                  <a class="btn btn-warning mt-2 text-center" href="cart.html">Add To Card</a>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
             </div>
           </div>
           </div>
-          <div class="main-row4 my-3">
-            <div class="row row1 bg-secondary">
-              <h1 class="col-12 text-center text-uppercase">Our Products</h1>
-            </div>
-            <div class="row bg-secondary justify-content-center">
-              <div class="row row1 col-12 justify-content-center">
-                  <div class="col1 mt-2 m-md-0">
-                    <div class="card our-product-card bg-dark">
-                      <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                      <div class="card-body bg-dark">
-                        <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                      </div>
-                    </div>
+          <div class="row main-row4 my-3">
+            <h1 class="col-12 text-center text-warning text-uppercase">Best Seller</h1>
+            <div class="row body justify-content-center p-3 col-12 col-lg-6">
+              <div class="row col-12">
+                <div class="product-card mx-auto col-13">
+                  <h1>Original Shoes</h1>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <div class="product-pic"></div>
+                  <div class="product-colors">
+                    <span class="blue active" data-color="#7ed6df" data-pic="url(image/1.png)"></span>
+                    <span class="green" data-color="#badc58" data-pic="url(image/2.png)"></span>
+                    <span class="yellow" data-color="#f9ca24" data-pic="url(image/3.png)"></span>
+                    <span class="rose" data-color="#ff7979" data-pic="url(image/4.png)"></span>
                   </div>
-                  <div class="col2 mt-2 m-md-0">
-                    <div class="card our-product-card bg-dark">
-                      <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                      <div class="card-body bg-dark">
-                        <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col3 mt-2 m-md-0">
-                    <div class="card our-product-card bg-dark">
-                      <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                      <div class="card-body bg-dark">
-                        <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col4 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col5 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col6 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
+                  <div class="product-info">
+                    <div class="product-price">$90</div>
+                    <a href="cart.html" class="product-button">Add to Cart</a>
                   </div>
                 </div>
               </div>
-              <div class="row row2 my-md-2 col-12 justify-content-center">
-                <div class="col1 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
+            </div> 
+            <div class="row body1 justify-content-center p-3 col-12 col-lg-6">
+              <div class="row col-12">
+                <div class="product-card mx-auto col-13">
+                  <h1>Original Shoes</h1>
+                  <p>Lorem ipsum dolor sit amet</p>
+                  <div class="product-pic1"></div>
+                  <div class="product-colors">
+                    <span class="blue active" data-color1="#7ed6df" data-pic1="url(image/1.png)"></span>
+                    <span class="green" data-color1="#badc58" data-pic1="url(image/2.png)"></span>
+                    <span class="yellow" data-color1="#f9ca24" data-pic1="url(image/3.png)"></span>
+                    <span class="rose" data-color1="#ff7979" data-pic1="url(image/4.png)"></span>
                   </div>
-                </div>
-                <div class="col2 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col3 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col4 mt-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col5 mt-2 mb-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col6 mt-2 mb-2 m-md-0">
-                  <div class="card our-product-card bg-dark">
-                    <img class="our-product-img d-none d-md-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                    <div class="card-body bg-dark">
-                      <a class="btn-sm btn-warning mt-2 text-center" href="product.html">Apple</a>
-                    </div>
+                  <div class="product-info">
+                    <div class="product-price1">$90</div>
+                    <a href="cart.html" class="product-button1">Add to Cart</a>
                   </div>
                 </div>
               </div>
-            </div>  
+            </div> 
           </div>
-          <div class="main-row5">
+          <div class="main-row5 mb-3">
             <div class="row row1 header-main-row5">
               <h1 class="col-12 text-center text-uppercase">We got new products</h1>
             </div>
-            <div class="col-12 text-center mb-5">
-              <a class="carousel-control-prev fa fa-arrow-left mr-2" href="#carouselExampleControls" role="button" data-slide="prev" aria-hidden="true"  href="#carouselExampleControls" role="button" data-slide="next"></a>     
-              <a class="carousel-control-next fa fa-arrow-right" href="#carouselExampleControls" role="button" data-slide="next" aria-hidden="true"></a>
-            </div>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row row2">
-                    <div class="col1 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col2 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col3 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col4 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="row row2 bg-warning justify-content-center">
+            <div class="container1 row justify-content-center w-100 p-2">
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
                 </div>
-                <div class="carousel-item">
-                  <div class="row row2">
-                    <div class="col1 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col2 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col3 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col4 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row row2">
-                    <div class="col1 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col2 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col3 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col4 col-12 col-md-3 mb-3">
-                      <div class="card new-poduct-card bg-warning">
-                        <img class="new-product-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXcl8T_8S6XstcmBKjJ0EjsVN-IfkBeeZbsScvhIyLWkpVMTYG&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="text-center text-dark">Apple Iphone 6s</h5>
-                          <h4 class="text-center text-success">$259.99</h4>
-                          <a class="btn btn-dark mt-2 mx-auto text-center col-12" href="singl.html">Check It</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </div>
+                  <a href="singl.html">Buy Now</a>
                 </div>
               </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mr-md-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+              <div class="card1 col-12 col-md-5 col-lg-3 mt-2">
+                <div class="imgBx">
+                  <img src="image/nike2.png">
+                </div>
+                <div class="contentBx">
+                  <h2>Nike Shoes</h2>
+                  <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <div class="color">
+                    <h3>Color :</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="singl.html">Buy Now</a>
+                </div>
+              </div>
+            </div>
             </div> 
           </div>
           <!-- Button trigger modal -->
@@ -630,7 +650,7 @@
             </form>
           </div>
         </div>
-        <div class="row row2 footer-row2">
+        <div class="row footer-row2">
           <div class="col1 col-12 col-md-6 d-md-flex h-100 text-center justify-content-center justify-content-md-start align-items-center">
             <h4 class="text-dark d-none d-md-flex"> We'r Here Too :</h4>
             <a href=""><i class="fa fa-facebook text-dark mx-4"></i></a>
@@ -646,6 +666,26 @@
     </div>  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $(".body").css("background",$(this).attr("data-color"));
+        $(".product-price").css("color",$(this).attr("data-color"));
+        $(".product-button").css("color",$(this).attr("data-color"));
+        $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      });
+    </script>
+    <script>
+      $(".product-colors span").click(function(){
+        $(".product-colors span").removeClass("active");
+        $(this).addClass("active");
+        $(".body1").css("background",$(this).attr("data-color1"));
+        $(".product-price1").css("color",$(this).attr("data-color1"));
+        $(".product-button1").css("color",$(this).attr("data-color1"));
+        $(".product-pic1").css("background-image",$(this).attr("data-pic1"));
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

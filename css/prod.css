@@ -1,0 +1,150 @@
+main{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container1{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 600px;
+	background: #fff;
+	margin: 20px;
+}
+
+.container1 .imgBx{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	background-color: #006dbc;
+}
+
+.container1 .imgBx:before{
+	content: 'Nike';
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #000;
+	opacity: 0.1;
+	font-size: 8em;
+	font-weight: 800;
+}
+
+.container1 .imgBx img{
+	position: relative;
+	width: 700px;
+	transform: rotate(-30deg);
+	left: -50px;
+}
+
+.container1 .details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+}
+
+.container1 .details h2{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	line-height: 0.8em;
+	color: #444;
+}
+
+.container1 .details h2 span{
+	font-size: 0.4em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.container1 .details p{
+	max-width: 85%;
+	margin-left: 15%;
+	color: #333;
+	font-size: 15px;
+}
+
+.container1 .details h3{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	color: #a2a2a2;
+	float: left;
+}
+
+.container1 .details a button{
+	background-color: #006dbc;
+	color: #fff;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	padding: 15px 20px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 40px;
+	float: right; 
+	cursor: pointer;
+}
+
+@media (max-width: 1080px){
+	.container1{
+		height: auto;
+	}
+	.container1 .imgBx{
+		padding: 40px;
+		box-sizing: border-box;
+		width: 100% !important;
+		height: auto;
+		text-align: center;
+		overflow: hidden;
+	}
+	.container1 .imgBx img{
+		left: initial;
+		max-width: 100%;
+		transform: rotate(0deg);
+	}
+	.details{
+		width: 100% !important;
+		height: auto;
+		padding: 20px;
+	}
+	.details p{
+		max-width: 100%;
+		margin-left: 0;
+	}
+}
+
+.circle{
+	width: 40px;
+    height: 40px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 1px #797979 solid;
+}
+
+.circle1{
+	background-color: #ff4545;
+}
+
+.circle2{
+	background-color: #2e92f9;
+}
+
+.circle3{
+	background-color: #72ef96;
+}
